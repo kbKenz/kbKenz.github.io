@@ -21,6 +21,7 @@ nav a { color: #515d63; }
 nav a:hover { color: var(--accent); }
 .page-layout { max-width: 1120px; margin: 0 auto; padding: 44px 30px 54px; display: grid; grid-template-columns: 225px minmax(0, 1fr); gap: 55px; align-items: start; }
 .profile { font-size: 14px; line-height: 1.6; color: var(--muted); border-left: 2px solid #d4dfdf; padding-left: 18px; }
+.profile-photo { display: block; width: 180px; height: 180px; margin: 0 0 20px; border-radius: 50%; object-fit: cover; object-position: 50% 44%; border: 1px solid #d4dfdf; }
 .profile-name { font-size: 18px; font-weight: bold; color: var(--heading); margin: 0 0 18px; }
 .profile p { margin: 0 0 18px; }
 .profile-role { color: #3a484f; font-weight: 600; font-size: 13px; }
@@ -79,6 +80,7 @@ footer div { max-width: 1120px; margin: auto; padding: 23px 30px; }
   nav { margin-top: 10px; gap: 8px 19px; }
   .page-layout { display: block; padding: 26px 22px 36px; }
   .profile { border-left: 0; border-bottom: 1px solid var(--rule); padding: 0 0 20px; margin-bottom: 30px; }
+  .profile-photo { width: 132px; height: 132px; margin-bottom: 13px; }
   .profile-name { display: none; }
   .profile p { margin-bottom: 10px; }
   .profile .location { margin-top: 12px; }
