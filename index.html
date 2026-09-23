@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fdfcf9">
+  <meta name="description" content="Bektur Kenzhebaev — research on agentic AI safety, memory auditability, and multi-agent evaluation. Research collaborator at ARCIDS Lab and founding AI engineer at Verc.">
+  <meta property="og:title" content="Bektur Kenzhebaev">
+  <meta property="og:description" content="Research, publications, education, and industry experience in agentic AI safety and evaluation.">
+  <meta property="og:type" content="website">
+  <title>Bektur Kenzhebaev</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-content">
+      <a class="site-name" href="#about">Bektur Kenzhebaev</a>
+      <nav aria-label="Main navigation">
+        <a href="#research">Research</a>
+        <a href="#direction">Research direction</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Industry experience</a>
+        <a href="assets/bektur-kenzhebaev-cv.pdf">CV</a>
+      </nav>
+    </div>
+  </header>
+  <div class="page-layout">
+    <aside class="profile" aria-label="Profile and contact information">
+      <p class="profile-name">Bektur Kenzhebaev</p>
+      <p><span class="profile-role">Research Collaborator</span><br>ARCIDS Lab, Wuhan University</p>
+      <p><span class="profile-role">Founding AI Engineer</span><br>Verc</p>
+      <p><span class="profile-role">Computer Science Student</span><br>American Institute of Technology,<br>Salymbekov University</p>
+      <p class="location">Bishkek, Kyrgyzstan</p>
+      <ul class="profile-links">
+        <li><a href="mailto:kenzhebaevbektur@gmail.com">Email</a></li>
+        <li><a href="https://openreview.net/profile?id=~Kenzhebaev_Bektur1">OpenReview</a></li>
+        <li><a href="https://github.com/kbKenz">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/bektur-kenzhebaev-098603271/">LinkedIn</a></li>
+        <li><a href="assets/bektur-kenzhebaev-cv.pdf">Curriculum vitae (PDF)</a></li>
+      </ul>
+    </aside>
+    <main id="main">
+      <section id="about" aria-labelledby="name">
+        <h1 id="name">Bektur Kenzhebaev</h1>
+        <p>I am a computer science student at the American Institute of Technology, Salymbekov University, a research collaborator with ARCIDS Lab at Wuhan University, and a founding AI engineer at Verc.</p>
+        <p>I study how trustworthy agentic AI behaves over repeated interaction: whether trajectory history can reveal where a failure began, whether individually acceptable agents can drift collectively, and how to intervene before a failure propagates. My work connects multi-agent evaluation, failure attribution, trajectory-level control, and memory auditability.</p>
+        <p>I am preparing for thesis-based graduate study beginning Fall 2027 and am interested in research collaborations in agent safety and evaluation. Please contact me at <a href="mailto:kenzhebaevbektur@gmail.com">kenzhebaevbektur@gmail.com</a>.</p>
+      </section>
+      <section id="research" aria-labelledby="research-title">
+        <h2 id="research-title">Research interests</h2>
+        <ul>
+          <li><strong>Multi-agent evaluation:</strong> studying alignment drift and harms that emerge through interaction, including effects missed by evaluating agents in isolation.</li>
+          <li><strong>Failure attribution:</strong> using trajectory history and decision context to identify where an iterative workflow failed, including inherited and joint causes.</li>
+          <li><strong>Trajectory-level control:</strong> testing pre-execution controls that preserve decision-relevant state and support intervention before failure propagates.</li>
+          <li><strong>Memory auditability:</strong> auditing whether correction and deletion change later behavior, including information retained in derived memories and checkpoints.</li>
+        </ul>
+        <p>Current work investigates behavioral erasure, call-level failure attribution, and pre-execution evaluation of agent actions. See the <a href="#manuscripts">research manuscripts</a> below.</p>
+      </section>
+      <section id="direction" aria-labelledby="direction-title">
+        <h2 id="direction-title">Research direction</h2>
+        <div class="direction-callout">
+          <p>I am interested in a thesis question at the boundary of alignment, evaluation, and control:</p>
+          <p><strong>Can an agent’s trajectory history reveal where a failure began, and can that evidence support intervention before a misaligned strategy propagates through a multi-agent system?</strong></p>
+        </div>
+        <div class="direction-questions">
+          <article><h3>Evaluate the interaction</h3><p>Measure behavior at the level of repeated interaction and system equilibrium, rather than relying only on isolated-agent tests.</p></article>
+          <article><h3>Trace the failure</h3><p>Represent trajectories well enough to distinguish an initiating error from inherited drift, downstream symptoms, and genuinely joint causes.</p></article>
+          <article><h3>Act before propagation</h3><p>Use pre-execution signals and trajectory state to decide when an agent or coordinator should pause, redirect, or request review.</p></article>
+        </div>
+        <p>This direction grows out of recent submitted work on <a href="https://openreview.net/forum?id=ayEEp0ZXmN">pre-execution trajectory control</a> and <a href="https://openreview.net/forum?id=NJI4W1lYGf">failure attribution in iterative LLM workflows</a>, alongside my accepted work on <a href="https://openreview.net/forum?id=Puc89swDkU">equilibrium-level harm in multi-agent systems</a>.</p>
+      </section>
+      <section id="publications" aria-labelledby="papers-title">
+        <h2 id="papers-title">Publications and accepted papers</h2>
+        <p class="section-note">2026 · <a href="https://openreview.net/profile?id=~Kenzhebaev_Bektur1">OpenReview profile</a></p>
+        <ol class="publications">
+          <li class="paper">
+            <p class="paper-title">Auditable Memory in Social Robots: Empirical Tests of Correction, Deletion, and Behavioural Influence</p>
+            <p>Marcel Osmond and <strong>Bektur Kenzhebaev</strong>.</p>
+            <p><em>International Symposium on Social Robots and Ethical Design (iSRED), 2026.</em> <span class="presentation-type">Accepted.</span></p>
+            <p class="paper-summary">Introduces the Personal Memory Audit Protocol (PMAP) and controlled tests of correction, deletion, and downstream influence across different memory backends.</p>
+            <p class="paper-links">[<a href="https://easychair.org/smart-program/iSRED2026/2026-11-12.html">Program and abstract</a>]</p>
+          </li>
+          <li class="paper">
+            <p class="paper-title">Equilibrium-Level Harm in Multi-Agent AI Systems: Why Individual Evaluation Fails</p>
+            <p>Marcel Osmond and <strong>Bektur Kenzhebaev</strong>.</p>
+            <p><em>Workshop on Evaluation and Trustworthiness of Agentic AI, KDD 2026.</em></p>
+            <p class="paper-summary">Studies harms that emerge when individually acceptable agents interact, and the limits of evaluating each agent in isolation.</p>
+            <p class="paper-links">[<a href="https://openreview.net/forum?id=Puc89swDkU">OpenReview</a>] [<a href="https://kdd-eval-workshop.github.io/agenticai-evaluation-kdd2026/assets/papers/39_Equilibrium_Level_Harm_in_M.pdf">Paper</a>] [<a href="https://kdd-eval-workshop.github.io/agenticai-evaluation-kdd2026/assets/papers/posters/39_Equilibrium_Level_Harm_in_M_Poster.pdf">Poster</a>]</p>
+          </li>
+          <li class="paper">
+            <p class="paper-title">Auditable Memory as a Safety Requirement for Agentic AI</p>
+            <p>Marcel Osmond, Tonghao Chen, Zhihang Tan, and <strong>Bektur Kenzhebaev</strong>.</p>
+            <p><em>SafeAI Workshop, UAI 2026.</em></p>
+            <p class="paper-summary">Proposes the Agent Memory Safety Audit (AMSA) to evaluate whether an agent’s memory remains traceable and controllable, including after correction and deletion.</p>
+            <p class="paper-links">[<a href="https://openreview.net/forum?id=aboNB674Xz">OpenReview</a>] [<a href="https://safe-ai-workshop.github.io/uai-2026/">Workshop</a>]</p>
+          </li>
+          <li class="paper">
+            <p class="paper-title">Verification Burden as Stakeholder-Centered Transparency: Evaluating Legal AI for Access-to-Justice Users</p>
+            <p>Marcel Osmond and <strong>Bektur Kenzhebaev</strong>.</p>
+            <p><em>CLEAR Workshop, IJCAI–ECAI 2026.</em> <span class="presentation-type">Oral presentation.</span></p>
+            <p class="paper-summary">Introduces verification burden as a way to evaluate whether access-to-justice users can understand, verify, and safely act on legal AI outputs.</p>
+            <p class="paper-links">[<a href="https://openreview.net/forum?id=1uDQNZY4i3">OpenReview</a>] [<a href="https://openreview.net/pdf?id=1uDQNZY4i3">Paper</a>] [<a href="https://clear-ws.github.io/2026/">Workshop program</a>]</p>
+          </li>
+        </ol>
+      </section>
+      <section id="manuscripts" aria-labelledby="manuscripts-title">
+        <h2 id="manuscripts-title">Research manuscripts</h2>
+        <p class="section-note">Submitted and unpublished work, listed separately from accepted papers.</p>
+        <ul class="manuscript-list">
+          <li><h3>Does Hand-Designed Trajectory State Improve Pre-Execution Control?</h3><p class="position-meta">Submitted manuscript · September 2026</p><p>Evaluates whether accumulated trajectory risk improves prevention over a stateless per-action rule, and distinguishes prevention from incident reconstruction.</p></li>
+          <li><h3>When Call-Level Attribution Fails in Iterative LLM Workflows: Representation, Calibration, and Non-Singleton Repairs</h3><p class="position-meta">Submitted manuscript · August 2026</p><p>Studies how trace representation, trajectory-level calibration, and repairs involving multiple calls limit failure attribution in iterative LLM workflows.</p></li>
+          <li><h3>Before Blaming a Call: Three Validity Gates for Agent Failure Attribution</h3><p class="position-meta">Submitted manuscript · August 2026</p><p>Proposes checking that a fault changes the outcome, that traces support meaningful origin ranking, and that repair evidence separates interventions from ordinary stochastic variation.</p></li>
+          <li><h3>From Retention to Influence: Auditing Behavioral Erasure in Stateful Agents</h3><p class="position-meta">Working manuscript · 2026</p><p>Develops AMSA-v2 to distinguish retained information, discoverability, runtime reachability, and behavioral influence through matched memory interventions.</p></li>
+          <li><h3>Ghost Knowledge in Agent Memory: Auditing Behavioral Persistence After Deletion and Correction</h3><p class="position-meta">Submitted manuscript · June 2026</p><p>Examines how information removed from a visible memory store can continue to influence behavior through transformed state, including checkpoints and profiles.</p></li>
+          <li><h3>Checkpoint Invalidation in Stateful LLM Agents: Behavioral Residue After Memory Updates</h3><p class="position-meta">Unpublished manuscript · 2026</p><p>Uses controlled checkpoint interventions to test whether visible-store updates are sufficient to change a stateful agent’s subsequent actions.</p></li>
+          <li><h3>Certifying Component-Wise Audits Against Harmful Multi-Agent Equilibria</h3><p class="position-meta">Unpublished manuscript · 2026</p><p>Formalizes the gap between individual-agent audits and harmful equilibria, with a synthetic shared-engagement experiment and an inclusion intervention.</p></li>
+          <li><h3>Equilibrium-Level Harm in Multi-Agent AI Ecosystems: Why Ethical Design Cannot Stop at the Individual Agent</h3><p class="position-meta">Related unpublished manuscript · 2026</p><p>Adapts the equilibrium-level harm research to ethical design in environments shared by social robots and AI agents.</p></li>
+        </ul>
+      </section>
+      <section id="research-experience" aria-labelledby="research-experience-title">
+        <h2 id="research-experience-title">Research experience</h2>
+        <article class="position">
+          <h3>Research Collaborator, ARCIDS Lab, Wuhan University</h3>
+          <p class="position-meta">2026–present · Remote</p>
+          <p>Research on safety and evaluation of agentic AI systems, including multi-agent equilibrium harm, memory auditability, and stakeholder-centered transparency.</p>
+        </article>
+      </section>
+      <section id="experience" aria-labelledby="industry-title">
+        <h2 id="industry-title">Industry experience</h2>
+        <article class="position">
+          <h3>Founding AI Engineer, Verc</h3>
+          <p class="position-meta">January 2026–present · Remote, VC-backed Palo Alto startup</p>
+          <ul>
+            <li>Designed a runtime rule-enforcement system that translates regulatory requirements into machine-checkable constraints evaluated against live agent behavior.</li>
+            <li>Built a custom orchestration framework managing state, concurrency, and enforcement across a distributed agent stack.</li>
+          </ul>
+        </article>
+        <article class="position">
+          <h3>AI Software Developer / DevOps Engineer / Back End Developer, AIT Solutions</h3>
+          <p class="position-meta">October 2024–January 2026 · Bishkek, Kyrgyzstan</p>
+          <ul>
+            <li>Implemented FastAPI services with Redis and Elasticsearch, including caching, notifications, file encryption, and Docker deployment.</li>
+            <li>Built AWS infrastructure with Terraform and Terragrunt, deployed services on ECS and Lambda, and maintained Bitbucket CI/CD pipelines.</li>
+            <li>Designed agent workflows using FastAPI backends and FastMCP servers orchestrated through LangChain and LangGraph.</li>
+          </ul>
+        </article>
+        <article class="position">
+          <h3>Full Stack Engineer, Freelance</h3>
+          <p class="position-meta">May 2022–October 2024 · Bishkek, Kyrgyzstan</p>
+          <ul>
+            <li>Built websites and web applications for local small businesses, including responsive interfaces, backend integrations, and deployment.</li>
+            <li>Worked directly with clients to define project scope and deliver applications end to end.</li>
+          </ul>
+        </article>
+      </section>
+      <section id="service" aria-labelledby="service-title">
+        <h2 id="service-title">Academic service</h2>
+        <p>Workshop reviewer, 2026:</p>
+        <ul>
+          <li>Interpreting Agent Behavior (IAB), NeurIPS 2026.</li>
+          <li>Meta-Agents, NeurIPS 2026.</li>
+          <li>Who Verifies the Agents? (verify-agents), NeurIPS 2026.</li>
+        </ul>
+      </section>
+      <section id="education" aria-labelledby="education-title">
+        <h2 id="education-title">Education</h2>
+        <h3>B.S. in Computer Science</h3>
+        <p>American Institute of Technology, Salymbekov University<br>2023–2027 (expected) · Bishkek, Kyrgyzstan</p>
+      </section>
+      <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <p>Email: <a href="mailto:kenzhebaevbektur@gmail.com">kenzhebaevbektur@gmail.com</a><br>
+        <a href="https://openreview.net/profile?id=~Kenzhebaev_Bektur1">OpenReview</a> · <a href="https://github.com/kbKenz">GitHub</a> · <a href="https://www.linkedin.com/in/bektur-kenzhebaev-098603271/">LinkedIn</a> · <a href="assets/bektur-kenzhebaev-cv.pdf">CV (PDF)</a></p>
+      </section>
+    </main>
+  </div>
+  <footer><div>© 2026 Bektur Kenzhebaev</div></footer>
+</body>
+</html>
