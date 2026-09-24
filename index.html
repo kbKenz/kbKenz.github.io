@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#fdfcf9">
-  <meta name="description" content="Bektur Kenzhebaev — research on agentic AI safety, memory auditability, and multi-agent evaluation. Research collaborator at ARCIDS Lab and founding AI engineer at Verc.">
+  <meta name="description" content="Bektur Kenzhebaev — research and engineering for trustworthy agentic AI, with a focus on multi-agent evaluation, failure attribution, and trajectory-level control.">
   <meta property="og:title" content="Bektur Kenzhebaev">
   <meta property="og:description" content="Research, publications, education, and industry experience in agentic AI safety and evaluation.">
   <meta property="og:type" content="website">
@@ -44,30 +44,30 @@
     <main id="main">
       <section id="about" aria-labelledby="name">
         <h1 id="name">Bektur Kenzhebaev</h1>
-        <p>I am a computer science student at the American Institute of Technology, Salymbekov University, a research collaborator with ARCIDS Lab at Wuhan University, and a founding AI engineer at Verc.</p>
-        <p>I study how trustworthy agentic AI behaves over repeated interaction: whether trajectory history can reveal where a failure began, whether individually acceptable agents can drift collectively, and how to intervene before a failure propagates. My work connects multi-agent evaluation, failure attribution, trajectory-level control, and memory auditability.</p>
-        <p>I am preparing for thesis-based graduate study beginning Fall 2027 and am interested in research collaborations in agent safety and evaluation. Please contact me at <a href="mailto:kenzhebaevbektur@gmail.com">kenzhebaevbektur@gmail.com</a>.</p>
+        <p>I am a computer science student at the American Institute of Technology, Salymbekov University, a research collaborator with ARCIDS Lab at Wuhan University, and a founding AI engineer at Verc. I work at the boundary between dependable AI research and production agent systems.</p>
+        <p>My central question is simple to state and difficult to answer: when an agent fails after a long chain of decisions, can its trajectory show where the failure began—and can we still intervene before that failure spreads? I study this problem through multi-agent evaluation, failure attribution, trajectory-level control, and memory auditability.</p>
+        <p>I am preparing for thesis-based graduate study beginning Fall 2027 and am looking for research collaborations in trustworthy agentic AI. Please contact me at <a href="mailto:kenzhebaevbektur@gmail.com">kenzhebaevbektur@gmail.com</a>.</p>
       </section>
       <section id="research" aria-labelledby="research-title">
         <h2 id="research-title">Research interests</h2>
         <ul>
-          <li><strong>Multi-agent evaluation:</strong> studying alignment drift and harms that emerge through interaction, including effects missed by evaluating agents in isolation.</li>
-          <li><strong>Failure attribution:</strong> using trajectory history and decision context to identify where an iterative workflow failed, including inherited and joint causes.</li>
-          <li><strong>Trajectory-level control:</strong> testing pre-execution controls that preserve decision-relevant state and support intervention before failure propagates.</li>
-          <li><strong>Memory auditability:</strong> auditing whether correction and deletion change later behavior, including information retained in derived memories and checkpoints.</li>
+          <li><strong>Alignment under interaction:</strong> measuring how individually acceptable agents can drift, coordinate, or produce harms that only appear at the system level.</li>
+          <li><strong>Failure attribution:</strong> turning long execution traces into evidence about initiating errors, inherited drift, downstream symptoms, and joint causes.</li>
+          <li><strong>Pre-execution control:</strong> using trajectory state to identify risky actions early enough for an agent or coordinator to pause, redirect, or request review.</li>
+          <li><strong>Auditable memory:</strong> testing whether correction and deletion actually change later behavior, including information retained in derived memories and checkpoints.</li>
         </ul>
         <p>Current work investigates behavioral erasure, call-level failure attribution, and pre-execution evaluation of agent actions. See the <a href="#manuscripts">research manuscripts</a> below.</p>
       </section>
       <section id="direction" aria-labelledby="direction-title">
         <h2 id="direction-title">Research direction</h2>
         <div class="direction-callout">
-          <p>I am interested in a thesis question at the boundary of alignment, evaluation, and control:</p>
-          <p><strong>Can an agent’s trajectory history reveal where a failure began, and can that evidence support intervention before a misaligned strategy propagates through a multi-agent system?</strong></p>
+          <p>Modern agent failures are often visible only after a chain of small decisions has already shaped the outcome. I am interested in a thesis question at the boundary of alignment, evaluation, and control:</p>
+          <p><strong>Can an agent’s trajectory history reveal the first meaningful deviation, and can that evidence support intervention before a misaligned strategy propagates through a multi-agent system?</strong></p>
         </div>
         <div class="direction-questions">
-          <article><h3>Evaluate the interaction</h3><p>Measure behavior at the level of repeated interaction and system equilibrium, rather than relying only on isolated-agent tests.</p></article>
-          <article><h3>Trace the failure</h3><p>Represent trajectories well enough to distinguish an initiating error from inherited drift, downstream symptoms, and genuinely joint causes.</p></article>
-          <article><h3>Act before propagation</h3><p>Use pre-execution signals and trajectory state to decide when an agent or coordinator should pause, redirect, or request review.</p></article>
+          <article><h3>Measure what emerges</h3><p>Evaluate repeated interaction and system equilibrium, where individually acceptable behavior can become collectively harmful.</p></article>
+          <article><h3>Find the first deviation</h3><p>Use trajectory representations that separate an initiating error from inherited drift, downstream symptoms, and genuinely joint causes.</p></article>
+          <article><h3>Intervene while it matters</h3><p>Use pre-execution signals to decide when an agent or coordinator should pause, redirect, or request review.</p></article>
         </div>
         <p>This direction grows out of recent submitted work on <a href="https://openreview.net/forum?id=ayEEp0ZXmN">pre-execution trajectory control</a> and <a href="https://openreview.net/forum?id=NJI4W1lYGf">failure attribution in iterative LLM workflows</a>, alongside my accepted work on <a href="https://openreview.net/forum?id=Puc89swDkU">equilibrium-level harm in multi-agent systems</a>.</p>
       </section>
