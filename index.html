@@ -44,24 +44,24 @@
     <main id="main">
       <section id="about" aria-labelledby="name">
         <h1 id="name">Bektur Kenzhebaev</h1>
-        <p>I am a computer science student at the American Institute of Technology, Salymbekov University, a research collaborator with ARCIDS Lab at Wuhan University, and a founding AI engineer at Verc. I work at the boundary between dependable AI research and production agent systems.</p>
-        <p>My central question is simple to state and difficult to answer: when an agent fails after a long chain of decisions, can its trajectory show where the failure began, and can we still intervene before that failure spreads? I study this problem through multi-agent evaluation, failure attribution, trajectory-level control, and memory auditability.</p>
-        <p>I am preparing for thesis-based graduate study beginning Fall 2027 and am looking for research collaborations in trustworthy agentic AI. Please contact me at <a href="mailto:kenzhebaevbektur@gmail.com">kenzhebaevbektur@gmail.com</a>.</p>
+        <p>I am a computer science student at the American Institute of Technology, Salymbekov University, a research collaborator with ARCIDS Lab at Wuhan University, and a founding AI engineer at Verc. I work at the boundary between dependable AI research and production agent systems, with a broad interest in how AI systems learn, act, coordinate, and remain accountable in the real world.</p>
+        <p>My research spans trustworthy agentic AI, evaluation, alignment, human oversight, and the engineering of reliable systems. A recurring thread in my work asks how we can understand an agent’s behavior over time, locate the source of a failure, and design better interventions. I use multi-agent evaluation, failure attribution, trajectory-level control, and memory auditability as connected ways to study that larger problem.</p>
+        <p>I am preparing for thesis-based graduate study beginning Fall 2027 and am open to research collaborations across adjacent questions in AI safety, evaluation, and intelligent systems. Please contact me at <a href="mailto:kenzhebaevbektur@gmail.com">kenzhebaevbektur@gmail.com</a>.</p>
       </section>
       <section id="research" aria-labelledby="research-title">
         <h2 id="research-title">Research interests</h2>
         <ul>
-          <li><strong>Alignment under interaction:</strong> measuring how individually acceptable agents can drift, coordinate, or produce harms that only appear at the system level.</li>
-          <li><strong>Failure attribution:</strong> turning long execution traces into evidence about initiating errors, inherited drift, downstream symptoms, and joint causes.</li>
-          <li><strong>Pre-execution control:</strong> using trajectory state to identify risky actions early enough for an agent or coordinator to pause, redirect, or request review.</li>
-          <li><strong>Auditable memory:</strong> testing whether correction and deletion actually change later behavior, including information retained in derived memories and checkpoints.</li>
+          <li><strong>Trustworthy agentic AI:</strong> evaluating systems that reason, use tools, adapt, and act over extended interactions.</li>
+          <li><strong>Evaluation and alignment:</strong> measuring behavior under interaction, oversight, and changing conditions, including harms that appear only at the system level.</li>
+          <li><strong>Failure analysis and control:</strong> turning execution traces into evidence about what went wrong and identifying interventions that can improve reliability.</li>
+          <li><strong>Memory and accountability:</strong> testing whether agent state, correction, and deletion remain traceable and behaviorally effective.</li>
         </ul>
         <p>Current work investigates behavioral erasure, call-level failure attribution, and pre-execution evaluation of agent actions. See the <a href="#manuscripts">research manuscripts</a> below.</p>
       </section>
       <section id="direction" aria-labelledby="direction-title">
         <h2 id="direction-title">Research direction</h2>
         <div class="direction-callout">
-          <p>Modern agent failures are often visible only after a chain of small decisions has already shaped the outcome. I am interested in a thesis question at the boundary of alignment, evaluation, and control:</p>
+          <p>One current research thread examines what happens when an agent’s behavior unfolds through a chain of decisions and interactions. Modern failures are often visible only after that chain has already shaped the outcome.</p>
           <p><strong>Can an agent’s trajectory history reveal the first meaningful deviation, and can that evidence support intervention before a misaligned strategy propagates through a multi-agent system?</strong></p>
         </div>
         <div class="direction-questions">
@@ -69,7 +69,7 @@
           <article><h3>Find the first deviation</h3><p>Use trajectory representations that separate an initiating error from inherited drift, downstream symptoms, and genuinely joint causes.</p></article>
           <article><h3>Intervene while it matters</h3><p>Use pre-execution signals to decide when an agent or coordinator should pause, redirect, or request review.</p></article>
         </div>
-        <p>This direction grows out of recent submitted work on <a href="https://openreview.net/forum?id=ayEEp0ZXmN">pre-execution trajectory control</a> and <a href="https://openreview.net/forum?id=NJI4W1lYGf">failure attribution in iterative LLM workflows</a>, alongside my accepted work on <a href="https://openreview.net/forum?id=Puc89swDkU">equilibrium-level harm in multi-agent systems</a>.</p>
+        <p>This thread grows out of recent submitted work on <a href="https://openreview.net/forum?id=ayEEp0ZXmN">pre-execution trajectory control</a> and <a href="https://openreview.net/forum?id=NJI4W1lYGf">failure attribution in iterative LLM workflows</a>, alongside my accepted work on <a href="https://openreview.net/forum?id=Puc89swDkU">equilibrium-level harm in multi-agent systems</a>. It is one part of a broader interest in building AI systems that can be evaluated, understood, and improved.</p>
       </section>
       <section id="publications" aria-labelledby="papers-title">
         <h2 id="papers-title">Publications and accepted papers</h2>
