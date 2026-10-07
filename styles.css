@@ -58,6 +58,8 @@ strong { font-weight: 600; }
 .position { margin: 0 0 27px; }
 .position-meta { color: var(--muted); font-size: 13px; margin: 2px 0 10px; }
 .position ul { margin-top: 8px; }
+.position-role { margin-top: 18px; padding-left: 16px; border-left: 2px solid var(--rule); }
+.position-role h4 { margin: 0 0 4px; color: var(--heading); font-size: 15px; font-weight: 600; line-height: 1.4; }
 #contact { margin-top: 36px; }
 footer { border-top: 1px solid var(--rule); color: var(--muted); font-size: 12px; }
 footer div { max-width: 1120px; margin: auto; padding: 23px 30px; }
